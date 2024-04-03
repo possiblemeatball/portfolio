@@ -16,8 +16,7 @@ import MeatballModel from "./MeatballModel.vue";
         :look-at="[0, 0, 0]"
       />
       <TresAmbientLight
-          :intensity="1"
-          :color="0xffffff"
+          :intensity="10"
       />
       <Suspense>
         <MeatballModel />
