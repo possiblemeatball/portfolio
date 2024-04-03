@@ -1,15 +1,11 @@
 <script setup>
 import { ref } from 'vue'
 
-defineProps({
-  msg: String,
-})
-
 const count = ref(0)
 </script>
 
 <template>
-  <h1 class="font-semibold text-5xl text-center py-6">{{ msg }}</h1>
+  <h1 class="font-semibold text-5xl text-center py-6">possiblemeatball</h1>
   <hr>
 
   <div class="container mx-auto text-center my-4 p-4 bg-neutral-400 dark:bg-stone-900 w-1/3">
