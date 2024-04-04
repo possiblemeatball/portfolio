@@ -4,11 +4,15 @@ import WebGL from './components/WebGL.vue'
 </script>
 
 <template>
-  <div class="webgl w-[648px] h-[480px] mx-auto">
-    <Suspense>
-      <WebGL />
-    </Suspense>
+  <div class="w-screen h-screen flex flex-col justify-center">
+    <div class="flex-none mx-auto w-[640px] h-[256px] ">
+      <Suspense>
+        <WebGL />
+      </Suspense>
+    </div>
+    <div class="flex justify-center">meatball</div>
   </div>
+
 
   <router-view></router-view>
 </template>
