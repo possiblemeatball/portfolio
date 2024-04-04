@@ -2,11 +2,16 @@
 import {ref} from "vue";
 import {TresCanvas, useRenderLoop} from "@tresjs/core";
 import {useGLTF} from "@tresjs/cientos";
+import * as THREE from "three";
 
 const meatball = await useGLTF("/meatball.glb", { draco: true })
 meatball.scene.traverse((node) => {
   if (!node.isMesh) return
   node.material.wireframe = true
+
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    node.material.color = new THREE.Color('white')
+  }
 })
 
 meatball.scene.scale.set(1, 1, 1)
@@ -31,18 +36,18 @@ if (random >= 0.9 || (random <= 0.5 && random >= 0)) {
 </script>
 
 <template>
-  <div class="animate-slide-top flex-none mx-auto w-[640px] h-[256px]">
+  <div class="will-change-transform flex-none mx-auto w-[360px] h-[140px] animate-slide-top">
     <TresCanvas
         alpha
+        preset="realistic"
         :antialias="false"
     >
       <TresPerspectiveCamera
-          :position="[13, 0, 0]"
+          :position="[8, 0, 0]"
           :up="[0, 1, 0]"
           :look-at="[0, 0, 0]"
-          :aspect="640 / 256"
-          :fov="13"
-          :near="0.005"
+          :fov="10"
+          :near="0.00000000001"
           :far="10000"
       />
       <TresAmbientLight
