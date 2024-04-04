@@ -1,18 +1,13 @@
 <script setup>
-import TitleWebGL from './components/TitleWebGL.vue'
+import {defineAsyncComponent} from "vue";
 
+const Dashboard = defineAsyncComponent(() => import('./components/dashboard/Dashboard.vue'))
+const Portfolio = defineAsyncComponent(() => import('./components/Portfolio.vue'))
 </script>
 
 <template>
-  <div class="w-screen h-screen flex flex-col justify-center">
-    <Suspense>
-      <TitleWebGL />
-    </Suspense>
-    <div class="animate-slide-bottom flex justify-center">meatball</div>
-  </div>
-
-
-  <router-view></router-view>
+  <Dashboard />
+  <Portfolio />
 </template>
 
 <style scoped>
