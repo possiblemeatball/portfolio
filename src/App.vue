@@ -2,7 +2,7 @@
 import {defineAsyncComponent} from "vue";
 
 const Dashboard = defineAsyncComponent(() => import('./components/dashboard/Dashboard.vue'))
-const Portfolio = defineAsyncComponent(() => import('./components/Portfolio.vue'))
+const Portfolio = defineAsyncComponent(() => import('./components/portfolio/Portfolio.vue'))
 </script>
 
 <template>
