@@ -31,12 +31,14 @@ if (random >= 0.9 || (random <= 0.5 && random >= 0)) {
 </script>
 
 <template>
+  <div class="animate-slide-top flex-none mx-auto w-[640px] h-[256px]">
     <TresCanvas
         alpha
         :antialias="false"
     >
       <TresPerspectiveCamera
           :position="[13, 0, 0]"
+          :up="[0, 1, 0]"
           :look-at="[0, 0, 0]"
           :aspect="640 / 256"
           :fov="13"
@@ -53,7 +55,9 @@ if (random >= 0.9 || (random <= 0.5 && random >= 0)) {
         </Suspense>
       </TresScene>
     </TresCanvas>
+  </div>
 </template>
 
 <style scoped>
+
 </style>
