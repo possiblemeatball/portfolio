@@ -11,7 +11,7 @@ const TitleWebGL = defineAsyncComponent(() =>
            "w-screen h-screen
             grid grid-cols-1 lg:grid-cols-3
             justify-center content-center
-            bg-neutral-100 dark:bg-stone-900"
+            bg-neutral-50 dark:bg-stone-950"
   >
     <div class="will-change-transform my-auto mx-auto animate-slide-top lg:col-span-3">
       <Suspense>

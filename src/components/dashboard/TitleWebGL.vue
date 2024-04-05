@@ -22,13 +22,13 @@ const sceneRef = ref()
 const rotationSpeed = Math.random() * (4 - 1) + 1
 const random = Math.random()
 
-if (random >= 0.9 || (random < 0.9 && random > 0.5)) {
+if (random >= 0.9 || (random < 0.9 && random >= 0.5)) {
   useRenderLoop().onLoop(({delta}) => {
     sceneRef.value.rotation.y -= (delta * rotationSpeed)
   })
 }
 
-if (random >= 0.9 || (random <= 0.5 && random >= 0)) {
+if (random >= 0.9 || (random < 0.5 && random >= 0)) {
   useRenderLoop().onLoop(({delta}) => {
     sceneRef.value.rotation.z -= (delta * rotationSpeed)
   })
