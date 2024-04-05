@@ -2,7 +2,7 @@
 import { defineAsyncComponent } from "vue"
 import Container from './Container.vue'
 const About = defineAsyncComponent(() => import("./about/About.vue"))
-const Experience = defineAsyncComponent(() => import("./experience/Experience.vue"))
+const WorkHistory = defineAsyncComponent(() => import("./work/WorkHistory.vue"))
 const Projects = defineAsyncComponent(() => import("./projects/Projects.vue"))
 
 </script>
@@ -13,7 +13,7 @@ const Projects = defineAsyncComponent(() => import("./projects/Projects.vue"))
       <Container :component="About" />
     </Suspense>
     <Suspense>
-      <Container :component="Experience" />
+      <Container :component="WorkHistory" />
     </Suspense>
     <Suspense>
       <Container :component="Projects" />
