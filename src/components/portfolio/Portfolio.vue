@@ -8,7 +8,7 @@ const Projects = defineAsyncComponent(() => import("./projects/Projects.vue"))
 </script>
 
 <template>
-  <div class="min-h-lvh flex flex-col">
+  <div class="min-h-lvh flex flex-col space-y-8 py-8 justify-center">
     <Suspense>
       <Container :component="About" />
     </Suspense>
