@@ -9,16 +9,17 @@ const TitleWebGL = defineAsyncComponent(() =>
 <template>
   <div class=
            "w-screen h-screen
-            grid grid-cols-1 lg:grid-cols-3
-            justify-center content-center
+            grid justify-center place-content-center
             bg-neutral-50 dark:bg-stone-950"
   >
-    <div class="will-change-transform my-auto mx-auto animate-slide-top lg:col-span-3">
-      <Suspense>
-        <TitleWebGL />
-      </Suspense>
+    <div>
+      <div class="animate-slide-top">
+        <Suspense>
+          <TitleWebGL/>
+        </Suspense>
+      </div>
+      <div class="animate-slide-bottom text-center">meatball</div>
     </div>
-    <div class="will-change-transform my-auto mx-auto animate-slide-bottom lg:col-span-3">meatball</div>
   </div>
 </template>
 

@@ -19,7 +19,7 @@ meatball.scene.rotation.set(0, 1.57, 0)
 meatball.scene.position.set(0, 0, 0)
 
 const sceneRef = ref()
-const rotationSpeed = Math.random() * (4 - 1) + 1
+const rotationSpeed = Math.random() * (5 - 1.5) + 1.5
 const random = Math.random()
 
 if (random >= 0.9 || (random < 0.9 && random >= 0.5)) {
@@ -42,7 +42,8 @@ if (random >= 0.9 || (random < 0.5 && random >= 0)) {
         :antialias="false"
     >
       <TresPerspectiveCamera
-          :position="[8, 0, 0]"
+          :position="[7, 0, 0]"
+          :up="[0, 1, 0]"
           :look-at="[0, 0, 0]"
           :fov="10"
       />
