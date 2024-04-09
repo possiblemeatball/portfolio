@@ -21,7 +21,7 @@ const TitleWebGL = defineAsyncComponent(() =>
     </div>
     <div class=
              "w-screen h-screen py-4 md:p-4
-              grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-96 place-content-end md:place-content-around z-20">
+              grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-96 place-content-center md:place-content-around z-20">
       <div v-for="n in 4"
            class=
                "p-2 px-4
