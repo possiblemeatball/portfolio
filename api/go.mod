@@ -8,7 +8,7 @@ require (
 	github.com/gofiber/fiber/v3 v3.0.0-beta.2
 	github.com/joho/godotenv v1.5.1
 	go.mongodb.org/mongo-driver v1.15.0
-	golang.org/x/net v0.21.0
+	golang.org/x/net v0.23.0
 )
 
 require (
