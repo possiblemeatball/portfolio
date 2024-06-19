@@ -18,14 +18,8 @@ type Name struct {
 func main() {
 	appConfig := config.EnvToFiber()
 	app := fiber.New(appConfig)
-	db, err := gorm.Open(mysql.New(mysql.Config{
-		DSN:                       "gorm:gorm@tcp(localhost:3306)/gorm?charset=utf8mb4&parseTime=True&loc=Local",
-		DefaultStringSize:         64,
-		DisableDatetimePrecision:  true,
-		DontSupportRenameIndex:    true,
-		DontSupportRenameColumn:   true,
-		SkipInitializeWithVersion: false,
-	}), &gorm.Config{})
+	dsn := "gorm:gorm@tcp(127.0.0.1:3306)/gorm?charset=utf8mb4&parseTime=True&loc=Local"
+	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic("failed to connect database")
 	}
