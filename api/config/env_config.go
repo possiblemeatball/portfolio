@@ -2,6 +2,7 @@ package config
 
 import (
 	"github.com/gofiber/fiber/v2"
+	_ "github.com/joho/godotenv/autoload"
 	"os"
 	"strconv"
 	"time"
