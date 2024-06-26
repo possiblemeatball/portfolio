@@ -2,17 +2,13 @@ package database
 
 import (
 	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo/readpref"
 	"golang.org/x/net/context"
+	"possiblemeatball.com/api/v2/config"
 )
 
-func NewMongoCollection() *mongo.Collection {
-	client, err := mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb://localhost:27017").SetAuth(options.Credential{
-		AuthMechanism: "SCRAM-SHA-256",
-		Username:      "test",
-		Password:      "test",
-	}))
+func NewMongoCollection(collectionName string) *mongo.Collection {
+	client, err := mongo.Connect(context.Background(), config.EnvToMongoClientOptions())
 	if err != nil {
 		panic(err)
 	}
@@ -20,6 +16,6 @@ func NewMongoCollection() *mongo.Collection {
 	if err != nil {
 		panic(err)
 	}
-	collection := client.Database("test").Collection("test")
+	collection := config.EnvToMongoCollection(client, collectionName)
 	return collection
 }

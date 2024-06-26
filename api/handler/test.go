@@ -11,7 +11,7 @@ import (
 )
 
 func AddJohn(c *fiber.Ctx) error {
-	mongoCollection := database.NewMongoCollection()
+	mongoCollection := database.NewMongoCollection("names")
 	collection := mongox.NewCollection[models.Name](mongoCollection)
 	john := models.Name{
 		FirstName: "John",
@@ -19,17 +19,17 @@ func AddJohn(c *fiber.Ctx) error {
 	}
 	result, err := collection.Creator().InsertOne(context.Background(), &john)
 	if err != nil {
-		return c.Status(fiber.StatusInternalServerError).JSON(&err)
+		return c.Status(fiber.StatusInternalServerError).JSON(err)
 	}
 	return c.JSON(result)
 }
 
 func ChangeJohn(c *fiber.Ctx) error {
-	mongoCollection := database.NewMongoCollection()
+	mongoCollection := database.NewMongoCollection("names")
 	collection := mongox.NewCollection[models.Name](mongoCollection)
 	result, err := collection.Updater().Filter(query.Eq("first_name", "John")).Updates(update.Set("last_name", "Deere")).UpdateOne(context.Background())
 	if err != nil {
-		return c.Status(fiber.StatusInternalServerError).JSON(&err)
+		return c.Status(fiber.StatusInternalServerError).JSON(err)
 	}
 	return c.JSON(result)
 }
