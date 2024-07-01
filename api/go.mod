@@ -4,7 +4,7 @@ go 1.22.4
 
 require (
 	github.com/chenmingyong0423/go-mongox v1.0.3
-	github.com/gofiber/fiber/v2 v2.52.4
+	github.com/gofiber/fiber/v2 v2.52.5
 	github.com/gofiber/fiber/v3 v3.0.0-beta.2
 	github.com/joho/godotenv v1.5.1
 	go.mongodb.org/mongo-driver v1.15.1
