@@ -1,6 +1,7 @@
 # portfolio
+[![build](https://github.com/possiblemeatball/portfolio/actions/workflows/build.yml/badge.svg)](https://github.com/possiblemeatball/portfolio/actions/workflows/build.yml)
 
-Documenting myself for the internet
+this my website mang this where it izz mang
 
 ### can i use this
 u probably shouldnt but there's a [license](LICENSE)
