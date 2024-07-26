@@ -17,7 +17,20 @@ const TitleWebGL = defineAsyncComponent(() =>
           <TitleWebGL/>
         </Suspense>
       </div>
-      <div class="animate-slide-bottom">website is under construction. check back later</div>
+      <div class="animate-slide-bottom">meatball</div>
+    </div>
+    <div class=
+             "w-screen h-screen py-4 md:p-4
+              grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-96 place-content-center md:place-content-around z-20">
+      <div v-for="n in 4"
+           class=
+               "p-2 px-4
+              md:rounded-lg bg-neutral-200 dark:bg-stone-800
+              shadow shadow-neutral-300 dark:shadow-stone-800"
+      >
+        <h2 class="font-semibold">test</h2>
+        <h3>{test</h3>
+      </div>
     </div>
   </div>
 </template>
