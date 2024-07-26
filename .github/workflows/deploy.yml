@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [build]
     steps:
-      - name: Create WireGuard tunnel
+      - name: WireGuard tunnel
         uses: NexRX/WireGuard-Session@v1
         with:
           wg-client-b64: ${{ secrets.WG_CONF_B64 }}
