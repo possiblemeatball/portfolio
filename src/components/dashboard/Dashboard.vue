@@ -8,22 +8,16 @@ const TitleWebGL = defineAsyncComponent(() =>
 
 <template>
   <div class=
-           "w-screen h-screen flex flex-col items-center justify-center text-center
+           "w-screen h-screen relative
             bg-neutral-50 dark:bg-stone-950"
   >
-    <div class="text-center">
-      <div class="animate-slide-top flex flex-row gap-8 items-center justify-center">
-        <img class="w-[64px]" src="../../assets/images/under_construction3.gif" alt="under construction ">
+    <div class="absolute text-center left-1/2 -translate-x-1/2 md:top-1/2 md:-translate-y-1/2 z-10">
+      <div class="animate-slide-top">
         <Suspense>
           <TitleWebGL/>
         </Suspense>
-        <img class="w-[64px]" src="../../assets/images/under_construction3.gif" alt="under construction ">
       </div>
-      <div class="animate-slide-bottom flex flex-row items-center justify-center">
-        <img class="w-[64px]" src="../../assets/images/under_construction2.gif" alt="under construction ">
-        <img class="h-[64px]" src="../../assets/images/under_construction.gif" alt="under construction ">
-        <img class="w-[64px]" src="../../assets/images/under_construction2.gif" alt="under construction ">
-      </div>
+      <div class="animate-slide-bottom">website is under construction. check back later</div>
     </div>
   </div>
 </template>
