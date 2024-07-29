@@ -23,7 +23,7 @@ module.exports = {
           '0%': { transform: 'translateY(100px)', opacity: '0' },
           '100%': { transform: 'translateY(0px)', opacity: '1' }
         }
-      }
+      },
     },
   },
   plugins: [
