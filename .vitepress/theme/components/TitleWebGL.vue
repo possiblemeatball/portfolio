@@ -1,25 +1,29 @@
 <script setup>
 import {ref} from "vue";
 import {TresCanvas, useRenderLoop} from "@tresjs/core";
-import {useGLTF} from "@tresjs/cientos";
+import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader.js";
 import {Color} from 'three'
 
-const meatball = await useGLTF("/meatball.glb", { draco: true })
-meatball.scene.traverse((node) => {
-  if (!node.isMesh) return
-  node.material.wireframe = true
+const sceneRef = ref()
+const loader = new GLTFLoader().setPath("/")
+loader.load("meatball.glb", (gltf) => {
+  const meatball = gltf.scene
+  meatball.traverse((node) => {
+    if (!node.isMesh) return
+    node.material.wireframe = true
 
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    node.material.color = new Color('white')
-  }
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      node.material.color = new Color('white')
+    }
+  })
+
+  meatball.scale.set(1, 1, 1)
+  meatball.rotation.set(0, 1.57, 0)
+  meatball.position.set(0, 0, 0)
+  sceneRef.value.add(meatball)
 })
 
-meatball.scene.scale.set(1, 1, 1)
-meatball.scene.rotation.set(0, 1.57, 0)
-meatball.scene.position.set(0, 0, 0)
-
-const sceneRef = ref()
-const rotationSpeed = Math.random() * (5 - 1.5) + 1.5
+const rotationSpeed = Math.random() * (3 - 0.5) + 0.5
 const random = Math.random()
 
 if (random >= 0.9 || (random < 0.9 && random >= 0.5)) {
@@ -51,11 +55,7 @@ if (random >= 0.9 || (random < 0.5 && random >= 0)) {
           :intensity="10"
           :color="0xffffff"
       />
-      <TresScene ref="sceneRef">
-        <Suspense>
-          <primitive :object="meatball.scene" />
-        </Suspense>
-      </TresScene>
+      <TresScene ref="sceneRef" />
     </TresCanvas>
   </div>
 </template>
