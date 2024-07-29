@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        @apply bg-neutral-100 text-stone-900 dark:bg-stone-900 dark:text-neutral-100 overflow-x-hidden;
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    @font-face {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-variation-settings:
+                "wdth" 100;
+        src: url("./assets/fonts/opensans.ttf") format("truetype");
+    }
+}
