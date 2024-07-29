@@ -19,7 +19,7 @@ loader.load("meatball.glb", (gltf) => {
 
   meatball.scale.set(1, 1, 1)
   meatball.rotation.set(0, 1.57, 0)
-  meatball.position.set(0, 0, 0)
+  meatball.position.set(0, 0, 0.09)
   sceneRef.value.add(meatball)
 })
 
@@ -40,16 +40,19 @@ if (random >= 0.9 || (random < 0.5 && random >= 0)) {
 </script>
 
 <template>
-  <div class="w-[360px] h-[140px]">
+  <div class="w-[511px] h-[128px]">
     <TresCanvas
         alpha
         :antialias="false"
     >
       <TresPerspectiveCamera
-          :position="[7, 0, 0]"
+          :position="[5, 0, 0]"
           :up="[0, 1, 0]"
           :look-at="[0, 0, 0]"
-          :fov="10"
+          :fov="13"
+          :aspect="3080 / 1080"
+          :near="0.005"
+          :far="10000"
       />
       <TresAmbientLight
           :intensity="10"

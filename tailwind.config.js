@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.md", "./.vitepress/theme/**/*.{js,vue}"],
+  content: ["./index.md", "./.vitepress/theme/**/*.{js,vue}"],
   theme: {
     extend: {
       fontFamily: {
@@ -11,8 +11,8 @@ module.exports = {
         'cursive': ['cursive'],
       },
       animation: {
-        'slide-top': 'slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
-        'slide-bottom': 'slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'
+        'slide-top': 'slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+        'slide-bottom': 'slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'
       },
       keyframes: {
         'slide-top': {
