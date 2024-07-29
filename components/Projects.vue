@@ -16,7 +16,7 @@ const blobs = [
 </script>
 
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col not-prose">
     <project-blob v-for="blob in blobs" :title="blob.title" :url="blob.url" :description="blob.description" />
   </div>
 </template>

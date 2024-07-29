@@ -38,8 +38,8 @@ Miami University Oxford, OH (2018-2020)
 
 ### Links
 <span class="flex flex-row justify-between">
-<a href="https://github.com/possiblemeatball" target="_blank">GitHub</a>
-<a href="https://youtube.com/@possiblemeatball" target="_blank">YouTube</a>
-<a href="https://t.me/possiblemeatball" target="_blank">Telegram</a>
-<a href="mailto:meatball@manthrowshat.net" target="_blank">E-mail</a>
+<a class="font-mono text-sm" href="https://github.com/possiblemeatball" target="_blank">GitHub</a>
+<a class="font-mono text-sm" href="https://youtube.com/@possiblemeatball" target="_blank">YouTube</a>
+<a class="font-mono text-sm" href="https://t.me/possiblemeatball" target="_blank">Telegram</a>
+<a class="font-mono text-sm" href="mailto:meatball@manthrowshat.net" target="_blank">E-mail</a>
 </span>

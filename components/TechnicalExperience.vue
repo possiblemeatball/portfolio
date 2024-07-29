@@ -8,7 +8,19 @@ const blobs = [
   },
   {
     icon: null,
+    skill: "LibHTTP"
+  },
+  {
+    icon: null,
+    skill: "ImGui"
+  },
+  {
+    icon: null,
     skill: "Golang"
+  },
+  {
+    icon: null,
+    skill: "Fiber"
   },
   {
     icon: null,
@@ -16,7 +28,11 @@ const blobs = [
   },
   {
     icon: null,
-    skill: "Kotlin"
+    skill: "Kotlin (Native)"
+  },
+  {
+    icon: null,
+    skill: "Spring Boot"
   },
   {
     icon: null,
@@ -28,39 +44,15 @@ const blobs = [
   },
   {
     icon: null,
+    skill: "egui"
+  },
+  {
+    icon: null,
+    skill: "Rocket"
+  },
+  {
+    icon: null,
     skill: "Python"
-  },
-  {
-    icon: null,
-    skill: "Swift"
-  },
-  {
-    icon: null,
-    skill: "Scala"
-  },
-  {
-    icon: null,
-    skill: "JavaScript"
-  },
-  {
-    icon: null,
-    skill: "Nodejs"
-  },
-  {
-    icon: null,
-    skill: "Express.js"
-  },
-  {
-    icon: null,
-    skill: "Vue.js"
-  },
-  {
-    icon: null,
-    skill: "React"
-  },
-  {
-    icon: null,
-    skill: "Angular"
   },
   {
     icon: null,
@@ -76,11 +68,83 @@ const blobs = [
   },
   {
     icon: null,
-    skill: "Fiber"
+    skill: "Swift"
+  },
+  {
+    icon: null,
+    skill: "Scala"
+  },
+  {
+    icon: null,
+    skill: "PHP"
+  },
+  {
+    icon: null,
+    skill: "Laravel"
+  },
+  {
+    icon: null,
+    skill: "JavaScript"
+  },
+  {
+    icon: null,
+    skill: "TypeScript"
+  },
+  {
+    icon: null,
+    skill: "jQuery"
+  },
+  {
+    icon: null,
+    skill: "Node.js"
+  },
+  {
+    icon: null,
+    skill: "Express.js"
+  },
+  {
+    icon: null,
+    skill: "Next.js"
+  },
+  {
+    icon: null,
+    skill: "Vue.js"
+  },
+  {
+    icon: null,
+    skill: "React (Native)"
+  },
+  {
+    icon: null,
+    skill: "AngularJS"
+  },
+  {
+    icon: null,
+    skill: "Ruby"
+  },
+  {
+    icon: null,
+    skill: "Rails"
   },
   {
     icon: null,
     skill: "TailwindCSS"
+  },
+  {
+    icon: null,
+    skill: "Git"
+  },
+  {
+    icon: null,
+    skill: "Subversion"
+  },
+  {
+    icon: null,
+    skill: "Docker"
+  },
+  {
+    icon: null,
+    skill: "Podman"
   },
   {
     icon: null,
@@ -92,11 +156,39 @@ const blobs = [
   },
   {
     icon: null,
+    skill: "GraphQL"
+  },
+  {
+    icon: null,
     skill: "MongoDB"
   },
   {
     icon: null,
-    skill: "Redis/ValKey"
+    skill: "Redis-compat"
+  },
+  {
+    icon: null,
+    skill: "memcached"
+  },
+  {
+    icon: null,
+    skill: "Arch Linux"
+  },
+  {
+    icon: null,
+    skill: "RHEL"
+  },
+  {
+    icon: null,
+    skill: "Bash"
+  },
+  {
+    icon: null,
+    skill: "zsh"
+  },
+  {
+    icon: null,
+    skill: "fish"
   },
   {
     icon: null,
@@ -116,11 +208,19 @@ const blobs = [
   },
   {
     icon: null,
+    skill: "NGINX"
+  },
+  {
+    icon: null,
     skill: "ZFS"
   },
   {
     icon: null,
     skill: "KVM/QEMU"
+  },
+  {
+    icon: null,
+    skill: "Windows"
   },
   {
     icon: null,
@@ -132,7 +232,7 @@ const blobs = [
   },
   {
     icon: null,
-    skill: "Android"
+    skill: "MacOS"
   },
   {
     icon: null,
@@ -140,26 +240,46 @@ const blobs = [
   },
   {
     icon: null,
-    skill: "MacOS"
+    skill: "Android"
   },
   {
     icon: null,
-    skill: "Windows"
+    skill: "watchOS"
   },
   {
     icon: null,
-    skill: "Arch Linux"
+    skill: "iPadOS"
   },
   {
     icon: null,
-    skill: "RHEL"
-  }
+    skill: "Xcode"
+  },
+  {
+    icon: null,
+    skill: "JetBrains"
+  },
+  {
+    icon: null,
+    skill: "AWS"
+  },
+  {
+    icon: null,
+    skill: "Microsoft Azure"
+  },
+  {
+    icon: null,
+    skill: "GCP"
+  },
+  {
+    icon: null,
+    skill: "DigitalOcean"
+  },
 ]
 
 </script>
 
 <template>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-2 place-content-center">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-2 place-content-center font-display not-prose">
     <t-e-blob v-for="blob in blobs" :skill="blob.skill" :icon="blob.icon" />
   </div>
 </template>
