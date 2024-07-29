@@ -5,5 +5,5 @@ export default defineConfig({
   lang: "en-US",
   title: "possiblemeatball",
   description: "Software Engineer, Systems Administrator, Entrepreneur",
-  cleanUrls: true
+  cleanUrls: true,
 })
