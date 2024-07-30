@@ -3,6 +3,7 @@ home: true
 ---
 <script setup>
 import Projects from './components/Projects.vue';
+import Employment from './components/Employment.vue';
 import TechnicalExperience from './components/TechnicalExperience.vue';
 </script>
 
@@ -24,17 +25,17 @@ and general information technology.
 <TechnicalExperience />
 
 ### Employment
-
-[Never Trust LLC](https://nevertrustllc.com) (2020-Present) - Sole Proprietor, Systems Administrator, Software Engineer  
-<span class="text-sm text-neutral-600 dark:text-neutral-400">Provide cloud systems support for small businesses with medium to large workloads and/or customer traffic</span>  
-<span class="text-sm text-neutral-600 dark:text-neutral-400">Administer customer resources, including RHEL-based cloud instances and PostgreSQL/MongoDB/Redis database servers</span>  
-<span class="text-sm text-neutral-600 dark:text-neutral-400">Secure cloud infrastructure against threat actors and intrusion attempts</span>
+<Employment />
 
 ### Education
-
-Miami University Hamilton, OH (2017-2018)  
-Miami University Oxford, OH (2018-2020)  
-<span class="text-sm text-neutral-600 dark:text-neutral-400">No degree, maj. Information Technology min. Media & Culture, Music Theory</span>
+<div class="p-2 flex flex-col gap-2">
+  <span class="text-left">
+    <span class="font-display font-bold text-lg">Miami University</span>
+    <span class="ml-2 font-sans font-normal">Oxford, OH</span>
+    <span class="ml-2 text-sm text-neutral-600 dark:text-neutral-400">2018 &mdash; 2020</span>
+  </span>
+  <span class="font-mono indent-8 text-sm text-neutral-600 dark:text-neutral-400">No degree, maj. Information Technology min. Media & Culture, Music Theory</span>
+</div>
 
 ### Links
 <span class="flex flex-row justify-between">

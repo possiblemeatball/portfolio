@@ -17,7 +17,7 @@ const { site, frontmatter } = useData()
       <p class="font-sans text-neutral-600 dark:text-neutral-400">{{ site.description }}</p>
     </div>
     <div class="container max-w-screen-sm p-8 pt-0 text-justify">
-      <div class="font-serif prose max-w-none prose-neutral dark:prose-invert">
+      <div class="prose prose-h3:font-display prose-p:font-sans max-w-none prose-neutral dark:prose-invert">
         <Content />
       </div>
     </div>
