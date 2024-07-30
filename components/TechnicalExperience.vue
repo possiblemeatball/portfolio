@@ -12,10 +12,6 @@ const blobs = [
   },
   {
     icon: null,
-    skill: "ImGui"
-  },
-  {
-    icon: null,
     skill: "Golang"
   },
   {
@@ -44,10 +40,6 @@ const blobs = [
   },
   {
     icon: null,
-    skill: "egui"
-  },
-  {
-    icon: null,
     skill: "Rocket"
   },
   {
@@ -61,10 +53,6 @@ const blobs = [
   {
     icon: null,
     skill: "Flask"
-  },
-  {
-    icon: null,
-    skill: "Django"
   },
   {
     icon: null,
@@ -84,11 +72,23 @@ const blobs = [
   },
   {
     icon: null,
+    skill: "HTML5"
+  },
+  {
+    icon: null,
     skill: "JavaScript"
   },
   {
     icon: null,
     skill: "TypeScript"
+  },
+  {
+    icon: null,
+    skill: "HTMX"
+  },
+  {
+    icon: null,
+    skill: "alpine.js"
   },
   {
     icon: null,
@@ -128,7 +128,15 @@ const blobs = [
   },
   {
     icon: null,
+    skill: "CSS3"
+  },
+  {
+    icon: null,
     skill: "TailwindCSS"
+  },
+  {
+    icon: null,
+    skill: "Bootstrap"
   },
   {
     icon: null,
@@ -164,7 +172,7 @@ const blobs = [
   },
   {
     icon: null,
-    skill: "Redis-compat"
+    skill: "Redis"
   },
   {
     icon: null,
@@ -172,7 +180,7 @@ const blobs = [
   },
   {
     icon: null,
-    skill: "Arch Linux"
+    skill: "Ubuntu Linux"
   },
   {
     icon: null,
@@ -184,11 +192,7 @@ const blobs = [
   },
   {
     icon: null,
-    skill: "zsh"
-  },
-  {
-    icon: null,
-    skill: "fish"
+    skill: "Zsh"
   },
   {
     icon: null,
@@ -224,11 +228,39 @@ const blobs = [
   },
   {
     icon: null,
+    skill: "PowerShell"
+  },
+  {
+    icon: null,
     skill: "Hyper-V"
   },
   {
     icon: null,
     skill: "Active Directory"
+  },
+  {
+    icon: null,
+    skill: "Microsoft IIS"
+  },
+  {
+    icon: null,
+    skill: "Microsoft Azure"
+  },
+  {
+    icon: null,
+    skill: "AWS"
+  },
+  {
+    icon: null,
+    skill: "GCP"
+  },
+  {
+    icon: null,
+    skill: "DigitalOcean"
+  },
+  {
+    icon: null,
+    skill: "Vercel"
   },
   {
     icon: null,
@@ -257,22 +289,6 @@ const blobs = [
   {
     icon: null,
     skill: "JetBrains"
-  },
-  {
-    icon: null,
-    skill: "AWS"
-  },
-  {
-    icon: null,
-    skill: "Microsoft Azure"
-  },
-  {
-    icon: null,
-    skill: "GCP"
-  },
-  {
-    icon: null,
-    skill: "DigitalOcean"
   },
 ]
 
