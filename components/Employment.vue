@@ -9,9 +9,22 @@ const blobs = [
     start: 2020,
     end: null,
     description: [
-        "Provide technical support for small businesses with medium to large workloads and/or customer traffic",
-        "Administer customer resources including RHEL-based PostgreSQL/MongoDB/Redis database and NGINX web servers",
-        "Secure cloud infrastructure against threat actors, intrusion attempts, and certain application DDoS attacks"
+      "Provide technical support for small businesses with medium to large workloads and/or customer traffic",
+      "Administer customer resources including RHEL-based PostgreSQL/MongoDB/Redis database and NGINX web servers",
+      "Secure cloud infrastructure against threat actors, intrusion attempts, and certain application DDoS attacks"
+    ]
+  },
+  {
+    company: "Luxury Haven LLC",
+    defunct: true,
+    url: null,
+    title: "Reverse Engineering, Software Engineer",
+    start: 2014,
+    end: 2014,
+    description: [
+      "Perform reverse engineering on PC game software using early tools such as IDA Pro, Fernflower, ILSpy",
+      "Create debug software for various PC games, including Source engine games, allowing for extensive modifications to the game",
+      "Administer internal server software, ensuring the reliability of our software for over 10,000 monthly active users"
     ]
   },
 ]
@@ -19,7 +32,7 @@ const blobs = [
 
 <template>
   <div class="flex flex-col not-prose">
-    <employ-blob v-for="blob in blobs" :title="blob.title" :company="blob.company" :url="blob.url" :start="blob.start" :end="blob.end" :description="blob.description" />
+    <employ-blob v-for="blob in blobs" :blob="blob" />
   </div>
 </template>
 

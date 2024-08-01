@@ -21,6 +21,7 @@
   "dependencies": {
     "@tresjs/cientos": "^3.9.0",
     "@tresjs/core": "^4.2.3",
+    "devicon": "^2.16.0",
     "three": "^0.167.0",
     "vue": "^3.4.34"
   }

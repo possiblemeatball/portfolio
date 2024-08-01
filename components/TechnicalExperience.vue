@@ -296,7 +296,7 @@ const blobs = [
 
 <template>
   <div class="grid grid-cols-2 md:grid-cols-4 gap-2 place-content-center font-display not-prose">
-    <t-e-blob v-for="blob in blobs" :skill="blob.skill" :icon="blob.icon" />
+    <t-e-blob v-for="blob in blobs" :blob="blob" />
   </div>
 </template>
 
