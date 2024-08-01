@@ -15,6 +15,19 @@ const blobs = [
     ]
   },
   {
+    company: "Digital Threads LLC",
+    defunct: true,
+    url: null,
+    title: "Software Development Internship",
+    start: 2019,
+    end: 2020,
+    description: [
+      "Troubleshoot and identify programming defects before code is introduced",
+      "Collaborate with technical mentors to write functional solutions to business problems",
+      "Maintain existing application infrastructure, with documentation, test case creation, and regression preparation in Python."
+    ]
+  },
+  {
     company: "Luxury Haven LLC",
     defunct: true,
     url: null,
