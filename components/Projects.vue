@@ -10,7 +10,20 @@ const blobs = [
   {
     title: "Rock Eaters",
     url: "https://rockeaters.net",
-    description: "Online services provider including e-mail, file upload, and search engine. Built using Golang, React, TailwindCSS, Postfix, Dovecot, and SearXNG."
+    description: "Online services provider including e-mail, file upload, and search engine. Built using React, TailwindCSS, Postfix, Dovecot, and SearXNG.",
+    tags: ["rocks", "rocks", "rocks"]
+  },
+  {
+    title: "Free Discord Bot",
+    url: "https://github.com/possiblemeatball/freediscordbot",
+    description: "Free and open source Discord Bot with a front-end web control panel. Currently in initial development stages.",
+    tags: ['in-dev']
+  },
+  {
+    title: "XIV",
+    url: null,
+    description: "An event-driven Minecraft client modification including ESP, Aim bot, and Anticheating avoidance. For legal and copyright reasons, source code is available upon request, with certain redactions.",
+    tags: ['abandoned', 'defunct', "blarg"]
   },
 ]
 </script>

@@ -156,6 +156,30 @@ const blobs = [
   },
   {
     icon: null,
+    skill: "Vulkan"
+  },
+  {
+    icon: null,
+    skill: "Metal"
+  },
+  {
+    icon: null,
+    skill: "OpenGL (ES)"
+  },
+  {
+    icon: null,
+    skill: "GLFW"
+  },
+  {
+    icon: null,
+    skill: "LWJGL"
+  },
+  {
+    icon: null,
+    skill: "SDL2"
+  },
+  {
+    icon: null,
     skill: "MySQL"
   },
   {
@@ -257,6 +281,14 @@ const blobs = [
   {
     icon: null,
     skill: "DigitalOcean"
+  },
+  {
+    icon: null,
+    skill: "Stripe"
+  },
+  {
+    icon: null,
+    skill: "PayPal"
   },
   {
     icon: null,

@@ -39,6 +39,7 @@ and general information technology.
 
 ### Links
 <span class="flex flex-row justify-between">
+<a class="font-mono text-sm" href="https://manthrowshat.net/tip" target="_blank">Tip Me</a>
 <a class="font-mono text-sm" href="https://github.com/possiblemeatball" target="_blank">GitHub</a>
 <a class="font-mono text-sm" href="https://youtube.com/@possiblemeatball" target="_blank">YouTube</a>
 <a class="font-mono text-sm" href="https://t.me/possiblemeatball" target="_blank">Telegram</a>
