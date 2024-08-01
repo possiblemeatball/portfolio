@@ -21,9 +21,6 @@ and general information technology.
 ### Projects
 <Projects />
 
-### Technical Experience
-<TechnicalExperience />
-
 ### Employment
 <Employment />
 
@@ -36,6 +33,9 @@ and general information technology.
   </span>
   <span class="font-mono indent-8 text-sm text-neutral-600 dark:text-neutral-400">No degree, maj. Information Technology min. Media & Culture, Music Theory</span>
 </div>
+
+### Technical Experience
+<TechnicalExperience />
 
 ### Links
 <span class="flex flex-row justify-between">
