@@ -7,8 +7,8 @@ const { site, frontmatter } = useData()
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center overflow-x-hidden">
-    <div class="p-4 pt-24 pb-4 w-screen flex flex-col justify-center items-center text-center
+  <div class="flex flex-col gap-0 justify-center items-center overflow-x-hidden">
+    <div class="p-4 pt-24 w-screen flex flex-col justify-center items-center text-center
                 select-none pointer-events-none bg-white dark:bg-black">
       <Suspense>
         <TitleWebGL class="animate-slide-top" />
@@ -16,7 +16,7 @@ const { site, frontmatter } = useData()
       <h1 class="font-display text-2xl">Matt "{{ site.title }}" Walker</h1>
       <p class="font-sans text-neutral-600 dark:text-neutral-400">{{ site.description }}</p>
     </div>
-    <div class="container max-w-screen-sm p-8 pt-0 text-justify">
+    <div class="container max-w-screen-sm p-4 pt-0 text-justify">
       <div class="prose prose-h3:font-display prose-p:font-sans max-w-none prose-neutral dark:prose-invert">
         <Content />
       </div>
