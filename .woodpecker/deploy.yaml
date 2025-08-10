@@ -24,6 +24,6 @@ steps:
       key:
         from_secret: SSH_PRIVATE_KEY
       target:
-        - /var/www/possiblemeatball.net
+        - /var/www/possiblemeatball.net/
       source:
         - .vitepress/dist/*
