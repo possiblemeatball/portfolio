@@ -27,6 +27,3 @@ steps:
         - /var/www/possiblemeatball.net
       source:
         - .vitepress/dist/*
-
-depends_on:
-  - build
