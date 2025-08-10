@@ -11,7 +11,7 @@ steps:
       frozen_lockfile: true
       ignore_node_modules: true
   - name: scp deploy to nginx
-    image: appleboy/drone-scp
+    image: appleboy/drone-ssh
     settings:
       host:
         from_secret: SSH_HOST
@@ -21,6 +21,6 @@ steps:
         from_secret: SSH_PORT
       key:
         from_secret: SSH_PRIVATE_KEY
-      overwrite: true
-      target: /var/www/possiblemeatball.net
-      source: .vitepress/dist/*
+      script:
+        - echo "test"
+        - ping 10.11.11.3
