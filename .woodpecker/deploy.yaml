@@ -1,9 +1,10 @@
+when:
+  - event: push
+    branch: main
+
 steps:
   - name: npm run build
     image: codeberg.org/woodpecker-plugins/node-pm
-    when:
-      - event: [ push,tag,release ]
-        branch: main
     settings:
       run: build
       with: npm
@@ -11,9 +12,6 @@ steps:
       ignore_node_modules: true
   - name: scp deploy to nginx
     image: appleboy/drone-scp
-    when:
-      - event: [ push,tag,release ]
-        branch: main
     settings:
       host:
         from_secret: SSH_HOST

@@ -1,3 +1,8 @@
+when:
+  - event: push
+    branch:
+      exclude: main
+
 steps:
   - name: npm run build
     image: codeberg.org/woodpecker-plugins/node-pm
