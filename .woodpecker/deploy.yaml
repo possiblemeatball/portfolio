@@ -24,3 +24,4 @@ steps:
       overwrite: true
       target: /var/www/possiblemeatball.net
       source: .vitepress/dist/*
+      strip_components: 2
