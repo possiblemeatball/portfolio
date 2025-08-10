@@ -21,7 +21,6 @@ steps:
         from_secret: SSH_PORT
       key:
         from_secret: SSH_PRIVATE_KEY
-      target:
-        - /var/www/possiblemeatball.net/
-      source:
-        - .vitepress/dist/*
+      overwrite: true
+      target: /var/www/possiblemeatball.net
+      source: .vitepress/dist/*
