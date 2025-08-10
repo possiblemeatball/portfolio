@@ -21,6 +21,6 @@ steps:
         from_secret: SSH_PORT
       key:
         from_secret: SSH_PRIVATE_KEY
-      script:
-        - echo "test"
-        - ping 10.11.11.3
+      overwrite: true
+      target: /var/www/possiblemeatball.net
+      source: .vitepress/dist/*
