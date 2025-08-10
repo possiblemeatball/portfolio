@@ -1,8 +1,18 @@
 steps:
-  - name: deploy
+  - name: npm run build
+    image: codeberg.org/woodpecker-plugins/node-pm
+    when:
+      - event: [ push,tag,release ]
+        branch: main
+    settings:
+      run: build
+      with: npm
+      frozen_lockfile: true
+      ignore_node_modules: true
+  - name: scp deploy to nginx
     image: appleboy/drone-scp
     when:
-      - event: [push,tag,release]
+      - event: [ push,tag,release ]
         branch: main
     settings:
       host:
