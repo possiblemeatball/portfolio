@@ -1,6 +1,9 @@
 steps:
   - name: deploy
     image: appleboy/drone-scp
+    when:
+      - event: [push,tag,release]
+        branch: main
     settings:
       host:
         from_secret: SSH_HOST
@@ -10,8 +13,9 @@ steps:
         from_secret: SSH_PORT
       key:
         from_secret: SSH_PRIVATE_KEY
-      target: /var/www/possiblemeatball.net
-      src:
+      target:
+        - /var/www/possiblemeatball.net
+      source:
         - .vitepress/dist/*
 
 depends_on:
