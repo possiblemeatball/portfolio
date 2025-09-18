@@ -1,5 +1,5 @@
 <script setup>
-import EmployBlob from "../../../components/blobs/EmployBlob.vue";
+import EmployBlob from "blobs/EmployBlob.vue";
 
 const blobs = [
   {

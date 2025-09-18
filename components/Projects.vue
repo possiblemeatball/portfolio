@@ -1,5 +1,5 @@
 <script setup>
-import ProjectBlob from "../../../components/blobs/ProjectBlob.vue";
+import ProjectBlob from "blobs/ProjectBlob.vue";
 
 const blobs = [
   {
