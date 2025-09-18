@@ -8,21 +8,20 @@
     "preview": "vitepress preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "possiblemeatball",
+  "license": "BSD-3-Clause",
+  "description": "My professional web portfolio",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "postcss": "8.5.6",
+    "vitepress": "2.0.0-alpha.12",
+    "vue": "3.5.21",
     "tailwindcss": "4.1.13",
-    "vitepress": "1.6.4"
+    "@tailwindcss/vite": "4.1.13",
+    "@tailwindcss/typography": "0.5.16"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "4.1.13",
-    "@tresjs/cientos": "4.3.1",
-    "@tresjs/core": "4.3.6",
-    "devicon": "2.17.0",
     "three": "0.180.0",
-    "vue": "3.5.21"
+    "@tresjs/core": "4.3.6",
+    "@tresjs/cientos": "4.3.1",
+    "devicon": "2.17.0"
   }
 }
