@@ -15,29 +15,36 @@
     @font-face {
         font-family: 'Red Hat Display';
         font-style: normal;
-        src: url('./assets/fonts/red_hat_display.ttf') format('truetype');
+        src: url('assets/fonts/redhatdisplay.ttf') format('truetype');
     }
+
+    @font-face {
+        font-family: 'Red Hat Display';
+        font-style: italic;
+        src: url('assets/fonts/redhatdisplayitalic.ttf') format('truetype');
+    }
+
     @font-face {
         font-family: 'Red Hat Text';
         font-style: normal;
-        src: url('./assets/fonts/red_hat_text.ttf') format('truetype');
+        src: url('./assets/fonts/redhattext.ttf') format('truetype');
     }
+
+    @font-face {
+        font-family: 'Red Hat Text';
+        font-style: italic;
+        src: url('./assets/fonts/redhattextitalic.ttf') format('truetype');
+    }
+
     @font-face {
         font-family: 'Red Hat Mono';
         font-style: normal;
-        src: url('./assets/fonts/red_hat_mono.ttf') format('truetype');
+        src: url('./assets/fonts/redhatmono.ttf') format('truetype');
     }
+
     @font-face {
-        font-family: 'Mate';
-        font-weight: 400;
-        font-style: normal;
-        src: url('./assets/fonts/mate.ttf') format('truetype');
-    }
-    @font-face {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-variation-settings:
-                "wdth" 100;
-        src: url("./assets/fonts/opensans.ttf") format("truetype");
+        font-family: 'Red Hat Mono';
+        font-style: italic;
+        src: url('./assets/fonts/redhatmonoitalic.ttf') format('truetype');
     }
 }

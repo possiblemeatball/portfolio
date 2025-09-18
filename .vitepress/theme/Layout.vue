@@ -17,7 +17,7 @@ const {site} = useData()
         <MeatballWebGl class="animate-slide-top"/>
       </Suspense>
       <h1 class="font-display text-2xl">{{ site.title }}</h1>
-      <p class="font-sans text-neutral-600 dark:text-neutral-400">{{ site.description }}</p>
+      <p class="font-sans italic text-neutral-600 dark:text-neutral-400">{{ site.description }}</p>
     </div>
     <div class="container max-w-screen-sm p-4 text-justify">
       <div class="prose prose-h3:font-display prose-p:font-sans max-w-none prose-neutral dark:prose-invert">
