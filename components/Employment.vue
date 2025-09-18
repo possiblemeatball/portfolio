@@ -1,5 +1,5 @@
 <script setup>
-import EmployBlob from "./blobs/EmployBlob.vue";
+import EmployBlob from "../../../components/blobs/EmployBlob.vue";
 
 const blobs = [
   {
@@ -7,7 +7,7 @@ const blobs = [
     url: "https://nevertrustllc.com",
     title: "Sole Proprietor, Systems Administrator, Software Engineer",
     start: 2020,
-    end: null,
+    end: 2025,
     description: [
       "Provide technical support for small businesses with medium to large workloads and/or customer traffic",
       "Administer customer resources including RHEL-based PostgreSQL/MongoDB/Redis database and NGINX web servers",
@@ -15,12 +15,11 @@ const blobs = [
     ]
   },
   {
-    company: "Digital Threads LLC",
-    defunct: true,
-    url: null,
-    title: "Software Development Internship",
-    start: 2019,
-    end: 2020,
+    company: "London Computer Systems",
+    url: "https://lcs.com/",
+    title: "Software Developer",
+    start: 2023,
+    end: 2023,
     description: [
       "Troubleshoot and identify programming defects before code is introduced",
       "Collaborate with technical mentors to write functional solutions to business problems",
@@ -28,16 +27,16 @@ const blobs = [
     ]
   },
   {
-    company: "Luxury Haven LLC",
-    defunct: true,
-    url: null,
-    title: "Reverse Engineering, Software Engineer",
-    start: 2014,
-    end: 2014,
+    company: "Tri-County Church of the Nazarene",
+    url: "https://tcn.church/",
+    title: "Audio/Video Technical Engineer",
+    start: 2017,
+    end: 2020,
     description: [
-      "Perform reverse engineering on PC game software using early tools such as IDA Pro, Fernflower, ILSpy",
-      "Create debug software for various PC games, including Source engine games, allowing for extensive modifications to the game",
-      "Administer internal server software, ensuring the reliability of our software for over 10,000 monthly active users"
+      "Set up and maintain audio and video equipment for live events",
+      "Ensure proper functionality of sound systems, projectors, and video displays",
+      "Perform routine maintenance and repairs on AV equipment",
+      "Test equipment to ensure seamless operation"
     ]
   },
 ]
@@ -45,7 +44,7 @@ const blobs = [
 
 <template>
   <div class="flex flex-col not-prose">
-    <employ-blob v-for="blob in blobs" :blob="blob" />
+    <employ-blob v-for="blob in blobs" :blob="blob"/>
   </div>
 </template>
 

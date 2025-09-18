@@ -1,5 +1,5 @@
 <script setup>
-import TEBlob from "./blobs/TEBlob.vue";
+import TEBlob from "../../../components/blobs/TEBlob.vue";
 
 const blobs = [{
   skill: "Golang"
