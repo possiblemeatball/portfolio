@@ -39,36 +39,36 @@
     @font-face {
         font-family: 'Red Hat Display';
         font-style: normal;
-        src: url('assets/fonts/redhatdisplay.ttf') format('truetype');
+        src: url(assets/fonts/redhatdisplay.ttf) format('truetype');
     }
 
     @font-face {
         font-family: 'Red Hat Display';
         font-style: italic;
-        src: url('assets/fonts/redhatdisplayitalic.ttf') format('truetype');
+        src: url(assets/fonts/redhatdisplayitalic.ttf) format('truetype');
     }
 
     @font-face {
         font-family: 'Red Hat Text';
         font-style: normal;
-        src: url('./assets/fonts/redhattext.ttf') format('truetype');
+        src: url(assets/fonts/redhattext.ttf) format('truetype');
     }
 
     @font-face {
         font-family: 'Red Hat Text';
         font-style: italic;
-        src: url('./assets/fonts/redhattextitalic.ttf') format('truetype');
+        src: url(assets/fonts/redhattextitalic.ttf) format('truetype');
     }
 
     @font-face {
         font-family: 'Red Hat Mono';
         font-style: normal;
-        src: url('./assets/fonts/redhatmono.ttf') format('truetype');
+        src: url(assets/fonts/redhatmono.ttf) format('truetype');
     }
 
     @font-face {
         font-family: 'Red Hat Mono';
         font-style: italic;
-        src: url('./assets/fonts/redhatmonoitalic.ttf') format('truetype');
+        src: url(assets/fonts/redhatmonoitalic.ttf) format('truetype');
     }
 }
