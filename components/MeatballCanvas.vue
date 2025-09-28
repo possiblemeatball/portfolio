@@ -1,8 +1,8 @@
 <script setup>
 import {ref} from "vue";
-import {TresCanvas, useRenderLoop} from "@tresjs/core";
-import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader.js";
+import {useGraph, useLoader, useLoop} from "@tresjs/core";
 import {Color} from 'three'
+import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader.js";
 
 const sceneRef = ref()
 function setMeatballColor({ matches }) {
@@ -40,40 +40,33 @@ const rotationSpeed = Math.random() * (3 - 0.5) + 0.5
 const random = Math.random()
 
 if (random >= 0.9 || (random < 0.9 && random >= 0.5)) {
-  useRenderLoop().onLoop(({delta}) => {
+  useLoop().onBeforeRender(({delta}) => {
     sceneRef.value.rotation.y -= (delta * rotationSpeed)
   })
 }
 
 if (random >= 0.9 || (random < 0.5 && random >= 0)) {
-  useRenderLoop().onLoop(({delta}) => {
+  useLoop().onBeforeRender(({delta}) => {
     sceneRef.value.rotation.z -= (delta * rotationSpeed)
   })
 }
 </script>
 
 <template>
-  <div class="w-[511px] h-[128px]">
-    <TresCanvas
-        alpha
-        :antialias="false"
-    >
-      <TresPerspectiveCamera
-          :position="[5, 0, 0]"
-          :up="[0, 1, 0]"
-          :look-at="[0, 0, 0]"
-          :fov="13"
-          :aspect="3080 / 1080"
-          :near="0.005"
-          :far="10000"
-      />
-      <TresAmbientLight
-          :intensity="10"
-          :color="0xffffff"
-      />
-      <TresScene ref="sceneRef" />
-    </TresCanvas>
-  </div>
+  <TresPerspectiveCamera
+      :position="[5, 0, 0]"
+      :up="[0, 1, 0]"
+      :look-at="[0, 0, 0]"
+      :fov="13"
+      :aspect="3080 / 1080"
+      :near="0.005"
+      :far="10000"
+  />
+  <TresAmbientLight
+      :intensity="10"
+      :color="0xffffff"
+  />
+  <TresScene ref="sceneRef" />
 </template>
 
 <style scoped>

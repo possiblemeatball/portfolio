@@ -1,21 +1,31 @@
 <script setup>
 import {useData} from 'vitepress'
-import MeatballWebGl from '../../components/MeatballWebGL.vue'
+import MeatballCanvas from '../../components/MeatballCanvas.vue'
 import Projects from "../../components/Projects.vue";
 import Employment from "../../components/Employment.vue";
 import TechnicalExperience from "../../components/TechnicalExperience.vue";
+import {TresCanvas} from "@tresjs/core";
 
 // https://vitepress.dev/reference/runtime-api#usedata
 const {site} = useData()
+
+const rendererSettings = {
+  antialias: false,
+  alpha: true,
+  clearAlpha: '0',
+  powerPreference: 'low-power',
+}
 </script>
 
 <template>
   <div class="flex flex-col gap-0 justify-center items-center overflow-x-hidden">
     <div class="p-4 pt-20 w-screen flex flex-col justify-center items-center text-center
                 select-none pointer-events-none bg-white dark:bg-neutral-900">
-      <Suspense>
-        <MeatballWebGl class="animate-slide-top"/>
-      </Suspense>
+      <div class="animate-slide-top w-[511px] h-[128px]">
+        <TresCanvas v-bind="rendererSettings">
+          <suspense><MeatballCanvas/></suspense>
+        </TresCanvas>
+      </div>
       <h1 class="font-display text-2xl">{{ site.title }}</h1>
       <p class="font-sans italic text-neutral-600 dark:text-neutral-400">{{ site.description }}</p>
     </div>
