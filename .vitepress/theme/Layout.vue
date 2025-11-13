@@ -25,7 +25,7 @@ const rendererSettings = {
           <suspense><MeatballCanvas/></suspense>
         </TresCanvas>
       </div>
-      <h1 class="font-medium text-2xl">{{ site.title }}</h1>
+      <h1 class="text-2xl">{{ site.title }}</h1>
       <p class="italic text-neutral-600 dark:text-neutral-400">{{ site.description }}</p>
     </div>
     <div class="container max-w-screen-sm p-4 text-justify">
