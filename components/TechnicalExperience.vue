@@ -174,11 +174,10 @@ const blobs = [{
 </script>
 
 <template>
+  <h3>Technical Experience</h3>
   <div class="grid grid-cols-2 md:grid-cols-4 gap-2 place-content-center font-display not-prose">
     <t-e-blob v-for="blob in blobs" :blob="blob" />
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

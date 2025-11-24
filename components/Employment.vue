@@ -43,11 +43,10 @@ const blobs = [
 </script>
 
 <template>
+  <h3>Employment</h3>
   <div class="flex flex-col not-prose">
-    <employ-blob v-for="blob in blobs" :blob="blob"/>
+    <employ-blob v-for="blob in blobs" :blob="blob" />
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
