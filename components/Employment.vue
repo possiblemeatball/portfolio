@@ -50,7 +50,7 @@ const jobs = [
         </a>
         <span v-else class="font-bold text-lg">
           {{ job.company }}
-          <span v-if="job.defunct" class="text-xs font-semibold ml-1">(defunct)</span>
+          <span v-if="job.defunct" class="ml-1 px-1 border text-sm font-mono font-normal">defunct</span>
         </span>
         <span class="ml-2">{{ job.title }}</span>
         <span class="ml-2 text-sm text-neutral-600 dark:text-neutral-400">

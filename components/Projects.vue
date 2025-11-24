@@ -49,7 +49,7 @@ const projects = [
           {{ project.title }}
         </a>
         <span v-else class="font-bold text-lg">{{ project.title }}</span>
-        <span class="ml-2 px-1 text-sm border" v-if="project.tags" v-for="tag in project.tags">
+        <span class="ml-2 px-1 font-mono text-sm border" v-if="project.tags" v-for="tag in project.tags">
           {{ tag }}
         </span>
       </span>
