@@ -1,7 +1,5 @@
 <script setup>
-import TEBlob from "./blobs/TEBlob.vue";
-
-const blobs = [{
+const skills = [{
   skill: "Golang"
 }, {
   skill: "Fiber"
@@ -176,7 +174,11 @@ const blobs = [{
 <template>
   <h3>Technical Experience</h3>
   <div class="grid grid-cols-2 md:grid-cols-4 gap-2 place-content-center font-display not-prose">
-    <t-e-blob v-for="blob in blobs" :blob="blob" />
+    <div
+      class="bg-neutral-300 border-neutral-400 text-neutral-800 dark:bg-neutral-600 dark:border-neutral-700 dark:text-neutral-200 flex flex-row justify-center items-center text-center gap-1 rounded-md border px-2 select-none pointer-events-none"
+      v-for="skill in skills">
+      {{ skill }}
+    </div>
   </div>
 </template>
 

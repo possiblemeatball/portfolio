@@ -1,7 +1,5 @@
 <script setup>
-import ProjectBlob from "./blobs/ProjectBlob.vue";
-
-const blobs = [
+const projects = [
   {
     title: "Rock Eaters Network",
     url: "https://rockeaters.net",
@@ -15,14 +13,12 @@ const blobs = [
   {
     title: "Free Discord Bot",
     url: "https://manthrowshat.net/projects/freediscordbot",
-    description: "Free and open source Discord Bot with a front-end web control panel",
-    tags: ['in-dev']
+    description: "Free and open source Discord Bot with a front-end web control panel"
   },
   {
     title: "NeverTrustLLC.com",
     url: "https://nevertrustllc.com",
-    description: "Corporate front-page website and customer portal",
-    tags: ['defunct']
+    description: "Corporate front-page website and customer portal"
   },
   {
     title: "ManThrowsHat.net",
@@ -47,7 +43,16 @@ const blobs = [
 <template>
   <h3>Projects</h3>
   <div class="flex flex-col not-prose">
-    <project-blob v-for="blob in blobs" :blob="blob" />
+    <div class="p-2 flex flex-col gap-2" v-for="project in projects">
+      <span class="font-display font-bold text-lg">
+        <a class="underline" v-if="project.url" :href="project.url" target="_blank">{{ project.title }}</a>
+        <span v-else>{{ project.title }}</span>
+        <span
+          class="ml-1 px-1 border rounded-md text-sm font-semibold bg-neutral-300 border-neutral-400 text-neutral-800 dark:bg-neutral-600 dark:border-neutral-700 dark:text-neutral-200"
+          v-if="project.tags" v-for="tag in project.tags">{{ tag }}</span>
+      </span>
+      <span class="font-mono indent-8 text-sm text-neutral-600 dark:text-neutral-400">{{ project.description }}</span>
+    </div>
   </div>
 </template>
 

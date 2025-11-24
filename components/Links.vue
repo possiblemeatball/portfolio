@@ -1,5 +1,4 @@
 <script setup>
-
 const links = {
     "Forgejo": "https://git.manthrowshat.net/meatball",
     "GitHub": "https://github.com/possiblemeatball",
