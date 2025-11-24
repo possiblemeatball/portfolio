@@ -1,184 +1,100 @@
 <script setup>
-const skills = [{
-  skill: "Golang"
-}, {
-  skill: "Fiber"
-}, {
-  skill: "Java"
-}, {
-  skill: "Kotlin (Native)"
-}, {
-  skill: "Spring Boot"
-}, {
-  skill: "C"
-}, {
-  skill: "C++"
-}, {
-  skill: "LibHTTP"
-}, {
-  skill: "Rust"
-}, {
-  skill: "Rocket"
-}, {
-  skill: "Dart"
-}, {
-  skill: "Flutter"
-}, {
-  skill: "Python"
-}, {
-  skill: "FastAPI"
-}, {
-  skill: "Flask"
-}, {
-  skill: "Swift"
-}, {
-  skill: "Scala"
-}, {
-  skill: "PHP"
-}, {
-  skill: "Laravel"
-}, {
-  skill: "Ruby"
-}, {
-  skill: "Rails"
-}, {
-  skill: "HTML5"
-}, {
-  skill: "JavaScript"
-}, {
-  skill: "TypeScript"
-}, {
-  skill: "Node.js"
-}, {
-  skill: "Express.js"
-}, {
-  skill: "Vue.js"
-}, {
-  skill: "Nuxt"
-}, {
-  skill: "React (Native)"
-}, {
-  skill: "Next.js"
-}, {
-  skill: "jQuery"
-}, {
-  skill: "HTMX"
-}, {
-  skill: "alpine.js"
-}, {
-  skill: "CSS3"
-}, {
-  skill: "TailwindCSS"
-}, {
-  skill: "Bootstrap"
-}, {
-  skill: "Git"
-}, {
-  skill: "Subversion"
-}, {
-  skill: "Docker"
-}, {
-  skill: "Podman"
-}, {
-  skill: "Vulkan"
-}, {
-  skill: "Metal"
-}, {
-  skill: "OpenGL (ES)"
-}, {
-  skill: "GLFW"
-}, {
-  skill: "LWJGL"
-}, {
-  skill: "SDL2"
-}, {
-  skill: "MySQL"
-}, {
-  skill: "PostgreSQL"
-}, {
-  skill: "GraphQL"
-}, {
-  skill: "MongoDB"
-}, {
-  skill: "Redis"
-}, {
-  skill: "memcached"
-}, {
-  skill: "Ubuntu Linux"
-}, {
-  skill: "RHEL"
-}, {
-  skill: "Bash"
-}, {
-  skill: "Zsh"
-}, {
-  skill: "Postfix"
-}, {
-  skill: "Dovecot"
-}, {
-  skill: "SpamAssassin"
-}, {
-  skill: "OpenDKIM"
-}, {
-  skill: "NGINX"
-}, {
-  skill: "ZFS"
-}, {
-  skill: "KVM/QEMU"
-}, {
-  skill: "Windows"
-}, {
-  skill: "PowerShell"
-}, {
-  skill: "Active Directory"
-}, {
-  skill: "Microsoft IIS"
-}, {
-  skill: "Microsoft Azure"
-}, {
-  skill: "AWS"
-}, {
-  skill: "GCP"
-}, {
-  skill: "Vercel"
-}, {
-  skill: "DigitalOcean"
-}, {
-  skill: "VMware ESXi"
-}, {
-  skill: "Hyper-V"
-}, {
-  skill: "Proxmox"
-}, {
-  skill: "Stripe"
-}, {
-  skill: "PayPal"
-}, {
-  skill: "MacOS"
-}, {
-  skill: "iOS"
-}, {
-  skill: "Android"
-}, {
-  skill: "watchOS"
-}, {
-  skill: "iPadOS"
-}, {
-  skill: "Xcode"
-}, {
-  skill: "JetBrains"
-},]
+const skills = ["Golang",
+  "Fiber",
+  "Java",
+  "Kotlin (Native)",
+  "Spring Boot",
+  "C",
+  "C++",
+  "LibHTTP",
+  "Rust",
+  "Rocket",
+  "Dart",
+  "Flutter",
+  "Python",
+  "FastAPI",
+  "Flask",
+  "Swift",
+  "Scala",
+  "PHP",
+  "Laravel",
+  "Ruby",
+  "Rails",
+  "HTML5",
+  "JavaScript",
+  "TypeScript",
+  "Node.js",
+  "Express.js",
+  "Vue.js",
+  "Nuxt",
+  "React (Native)",
+  "Next.js",
+  "jQuery",
+  "HTMX",
+  "alpine.js",
+  "CSS3",
+  "TailwindCSS",
+  "Bootstrap",
+  "Git",
+  "Subversion",
+  "Docker",
+  "Podman",
+  "Vulkan",
+  "Metal",
+  "OpenGL (ES)",
+  "GLFW",
+  "LWJGL",
+  "SDL2",
+  "MySQL",
+  "PostgreSQL",
+  "GraphQL",
+  "MongoDB",
+  "Redis",
+  "memcached",
+  "Ubuntu Linux",
+  "RHEL",
+  "Bash",
+  "Zsh",
+  "Postfix",
+  "Dovecot",
+  "SpamAssassin",
+  "OpenDKIM",
+  "NGINX",
+  "ZFS",
+  "KVM/QEMU",
+  "Windows",
+  "PowerShell",
+  "Active Directory",
+  "Microsoft IIS",
+  "Microsoft Azure",
+  "AWS",
+  "GCP",
+  "Vercel",
+  "DigitalOcean",
+  "VMware ESXi",
+  "Hyper-V",
+  "Proxmox",
+  "Stripe",
+  "PayPal",
+  "MacOS",
+  "iOS",
+  "Android",
+  "watchOS",
+  "iPadOS",
+  "Xcode",
+  "JetBrains"
+]
 
 </script>
 
 <template>
   <h3>Technical Experience</h3>
   <div class="grid grid-cols-2 md:grid-cols-4 gap-2 place-content-center font-display not-prose">
-    <div
-      class="bg-neutral-300 border-neutral-400 text-neutral-800 dark:bg-neutral-600 dark:border-neutral-700 dark:text-neutral-200 flex flex-row justify-center items-center text-center gap-1 rounded-md border px-2 select-none pointer-events-none"
+    <span
+      class="flex flex-row justify-center items-center text-center gap-1 border px-2 select-none pointer-events-none font-mono"
       v-for="skill in skills">
       {{ skill }}
-    </div>
+    </span>
   </div>
 </template>
 
