@@ -43,19 +43,22 @@ const jobs = [
 <template>
   <h3>Employment</h3>
   <div class="flex flex-col not-prose">
-    <div class="p-2 flex flex-col gap-2" v-for="job in jobs">
+    <div v-for="job in jobs" class="p-2 flex flex-col gap-2">
       <span class="text-left">
-        <a class="underline font-display font-bold text-lg" v-if="job.url" :href="job.url" target="_blank">
+        <a v-if="job.url" :href="job.url" target="_blank" class="underline font-bold text-lg">
           {{ job.company }}
         </a>
-        <span class="font-display font-bold text-lg" v-else>
+        <span v-else class="font-bold text-lg">
           {{ job.company }}
-          <span v-if="job.defunct" class="text-xs font-display font-semibold ml-1">(defunct)</span>
+          <span v-if="job.defunct" class="text-xs font-semibold ml-1">(defunct)</span>
         </span>
-        <span class="ml-2 font-sans font-normal">{{ job.title }}</span>
-        <span class="ml-2 text-sm text-neutral-600 dark:text-neutral-400">{{ job.start }} <span
-            v-if="job.end && (job.end !== job.start)">&mdash; {{ job.end }}</span><span v-else-if="job.end"></span><span
-            v-else>&mdash; Present</span></span>
+        <span class="ml-2">{{ job.title }}</span>
+        <span class="ml-2 text-sm text-neutral-600 dark:text-neutral-400">
+          {{ job.start }}
+          <span v-if="job.end && (job.end !== job.start)">&mdash; {{ job.end }}</span>
+          <span v-else-if="job.end"></span>
+          <span v-else>&mdash; Present</span>
+        </span>
       </span>
       <span v-for="desc in job.description" class="font-mono indent-8 text-sm text-neutral-600 dark:text-neutral-400">
         {{ desc }}

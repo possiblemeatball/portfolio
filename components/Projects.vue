@@ -44,12 +44,14 @@ const projects = [
   <h3>Projects</h3>
   <div class="flex flex-col not-prose">
     <div class="p-2 flex flex-col gap-2" v-for="project in projects">
-      <span class="font-display font-bold text-lg">
-        <a class="underline" v-if="project.url" :href="project.url" target="_blank">{{ project.title }}</a>
-        <span v-else>{{ project.title }}</span>
-        <span
-          class="ml-1 px-1 border rounded-md text-sm font-semibold bg-neutral-300 border-neutral-400 text-neutral-800 dark:bg-neutral-600 dark:border-neutral-700 dark:text-neutral-200"
-          v-if="project.tags" v-for="tag in project.tags">{{ tag }}</span>
+      <span class="text-left">
+        <a v-if="project.url" :href="project.url" target="_blank" class="underline font-bold text-lg">
+          {{ project.title }}
+        </a>
+        <span v-else class="font-bold text-lg">{{ project.title }}</span>
+        <span class="ml-2 px-1 text-sm border" v-if="project.tags" v-for="tag in project.tags">
+          {{ tag }}
+        </span>
       </span>
       <span class="font-mono indent-8 text-sm text-neutral-600 dark:text-neutral-400">{{ project.description }}</span>
     </div>

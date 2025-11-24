@@ -89,10 +89,9 @@ const skills = ["Golang",
 
 <template>
   <h3>Technical Experience</h3>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-2 place-content-center font-display not-prose">
-    <span
-      class="flex flex-row justify-center items-center text-center gap-1 border px-2 select-none pointer-events-none font-mono"
-      v-for="skill in skills">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-2 place-content-center not-prose">
+    <span v-for="skill in skills"
+      class="flex flex-row justify-center items-center text-center gap-1 border px-2 select-none pointer-events-none font-mono">
       {{ skill }}
     </span>
   </div>
