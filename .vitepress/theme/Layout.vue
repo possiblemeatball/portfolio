@@ -1,12 +1,12 @@
 <script setup>
 import { useData } from 'vitepress'
 import MeatballCanvas from '../../components/MeatballCanvas.vue'
+import Links from '../../components/Links.vue';
 import Projects from "../../components/Projects.vue";
 import Employment from "../../components/Employment.vue";
 import Education from '../../components/Education.vue';
-import Links from '../../components/Links.vue';
-import { TresCanvas } from "@tresjs/core";
 import Skills from '../../components/Skills.vue';
+import { TresCanvas } from "@tresjs/core";
 
 // https://vitepress.dev/reference/runtime-api#usedata
 const { site } = useData()
