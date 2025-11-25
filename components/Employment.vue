@@ -41,7 +41,7 @@ const jobs = [
 </script>
 
 <template>
-  <h3>Employment</h3>
+  <h2>Employment</h2>
   <div class="flex flex-col not-prose">
     <div v-for="job in jobs" class="p-2 flex flex-col gap-2">
       <span class="text-left">

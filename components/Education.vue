@@ -12,7 +12,7 @@ const certs = [
 </script>
 
 <template>
-    <h3>Education & Certifications</h3>
+    <h2>Education & Certifications</h2>
     <div class="flex flex-col not-prose">
         <div v-for="cert in certs" class="p-2 flex flex-col gap-2">
             <span class="text-left">

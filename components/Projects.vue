@@ -41,7 +41,7 @@ const projects = [
 </script>
 
 <template>
-  <h3>Projects</h3>
+  <h2>Projects</h2>
   <div class="flex flex-col not-prose">
     <div class="p-2 flex flex-col gap-2" v-for="project in projects">
       <span class="text-left">
