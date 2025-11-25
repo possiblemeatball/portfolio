@@ -41,6 +41,7 @@ const rendererSettings = {
         <Employment />
         <Education />
         <Skills />
+        <hr />
       </div>
     </div>
   </div>
