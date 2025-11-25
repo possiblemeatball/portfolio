@@ -9,7 +9,7 @@ const links = {
 </script>
 
 <template>
-    <span class="flex flex-row justify-between font-mono text-sm">
+    <span class="pt-2 flex flex-row gap-4 font-mono text-sm">
         <a v-for="link, title in links" :href="link" target="_blank" class="border px-1 no-underline">
             {{ title }}
         </a>

@@ -22,7 +22,7 @@ const rendererSettings = {
 <template>
   <div class="flex flex-col gap-0 justify-center items-center overflow-x-hidden">
     <div
-      class="p-4 pt-20 w-screen flex flex-col justify-center items-center text-center select-none pointer-events-none bg-white dark:bg-neutral-900">
+      class="p-4 w-screen flex flex-col justify-center items-center text-center select-none pointer-events-none bg-white dark:bg-neutral-900">
       <div class="animate-slide-top w-[511px] h-[128px]">
         <TresCanvas v-bind="rendererSettings">
           <suspense>
@@ -32,10 +32,10 @@ const rendererSettings = {
       </div>
       <h1 class="text-2xl">{{ site.title }}</h1>
       <p class="italic text-neutral-600 dark:text-neutral-400">{{ site.description }}</p>
+      <Links class="pointer-events-auto" />
     </div>
-    <div class="container max-w-screen-sm p-4 text-justify">
+    <div class="container max-w-screen-sm text-justify">
       <div class="prose max-w-none prose-neutral dark:prose-invert">
-        <Links />
         <content />
         <Projects />
         <Employment />
