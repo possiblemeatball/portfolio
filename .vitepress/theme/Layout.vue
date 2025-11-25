@@ -34,7 +34,7 @@ const rendererSettings = {
       <p class="italic text-neutral-600 dark:text-neutral-400">{{ site.description }}</p>
       <Links class="pointer-events-auto" />
     </div>
-    <div class="container max-w-screen-sm text-justify">
+    <div class="container px-4 max-w-screen-sm text-justify">
       <div class="prose max-w-none prose-neutral dark:prose-invert">
         <content />
         <Projects />
