@@ -10,11 +10,10 @@ export default defineConfig({
     srcExclude: ["README.md"],
     themeConfig: {
         nav: {
-            "Forgejo": "https://git.manthrowshat.net/meatball",
-            "GitHub": "https://github.com/possiblemeatball",
-            "Twitch": "https://www.twitch.tv/possiblemeatball",
             "E-mail": "mailto:meatball@manthrowshat.net",
-            "Tip Me": "https://manthrowshat.net/tip",
+            "Forgejo": "https://git.manthrowshat.net/meatball",
+            "Discord": "https://discord.com/users/555553450583130117",
+            "Tip Me!": "https://manthrowshat.net/tip",
         }
     },
     vite: {
