@@ -10,9 +10,10 @@ export default defineConfig({
     srcExclude: ["README.md"],
     themeConfig: {
         nav: {
-            "E-mail": "mailto:meatball@manthrowshat.net",
             "Forgejo": "https://git.manthrowshat.net/meatball",
+            "E-mail": "mailto:meatball@manthrowshat.net",
             "Discord": "https://discord.com/users/555553450583130117",
+            "Blog": "https://manthrowshat.net/blog",
             "Tip Me!": "https://manthrowshat.net/tip",
         }
     },
